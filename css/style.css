@@ -1,0 +1,236 @@
+/* Fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Cores */
+:root{
+    --main-color: #008fee;
+    --second-color: #212f3d;
+}
+section{
+    padding: 100px;
+}
+/* home  */
+
+#home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: 0.5s;
+}
+.logo{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: var(--second-color);
+    font-weight: 700;
+}
+ul{
+    display: flex;
+}
+ul li a{
+    padding: 10px 22px;
+    color: var(--second-color);
+    border-radius: 2px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+ul li a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    border:none;
+    transition: 0.5s;
+}
+
+.home-text{
+    max-width:700px;
+}
+.home-text h1{
+    color: var(--second-color);
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    line-height: 5.5rem;
+    margin-left: 50vh;
+}
+.home-text span{
+    color: var(--main-color);
+}
+.home-img{
+    width: 500vh;
+    height: 80vh;
+}
+.home-img img{
+    margin-left: 15vh;
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.social{
+    margin-top: 2.5vh;
+    justify-content: center;
+    display: flex;
+    bottom: 8%;
+    left: 144px;
+}
+.social i{
+    margin-right: 23px;
+    font-size: 50px;    
+    color: var(--second-color);
+    transition: 0.5s;
+}
+.social i:hover{
+    color: var(--main-color);
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+/* Heading */
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading h2{
+    color: var(--second-color);
+    border-bottom: 3px solid var(--second-color);
+    font-size: 1.8rem;
+}
+.heading p{
+   color: var(--second-color);
+   margin-top: 0.5rem; 
+}
+.about-content{
+    margin-top: 5vh;
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+}
+.about-img{
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+}
+.about-img img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.about-text{
+    width: 600px;
+    justify-content: center;
+}
+.about-text h1{
+    font-size: 1.5rem;
+    color: var(--second-color);
+}
+.about-text p{
+    color: var(--second-color);
+    margin: 5px 0 24px;
+    text-align: justify;
+    line-height: 1.8rem;
+}
+.about-text a{
+    padding: 12px 20px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about-text a:hover{
+    background:var(--second-color);
+    box-shadow: 0 10px 34px rgba(0,0,0,0,0.14);
+    transition: 0.5s;
+}
+.services-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.services-content .box{
+    padding: 40px 20px;
+    background-color: var(--second-color);
+    color: #fff;
+    max-width: 320px;
+    margin: 16px;
+    text-align: center;
+    transition: 0.5s;
+}
+.box img{
+    height: 45px;
+}
+.box h1{
+    font-size: 1.3rem;
+}
+.box p{
+    margin-top: 0.5rem;
+    font-size:1rem;
+    font-weight: 300;
+}
+.services-content .box:hover{
+    background: var(--main-color);
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.content-footer{
+    color: var(--second-color);
+    text-align: center;
+}
+.content-footer:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+/* Barra de Scroll */
+
+/* width */
+::-webkit-scrollbar {
+    width: 14px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inherit 0 0 1px grey; 
+    border-radius: 1px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--second-color); 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color); 
+  }
